@@ -1,13 +1,9 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:nested_model/screen/state/cubit.dart';
 import 'package:nested_model/screen/state/state.dart';
-
 class ListItem extends StatelessWidget {
   const ListItem({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(body:  BlocListener<ListingCubit, ListingState>(

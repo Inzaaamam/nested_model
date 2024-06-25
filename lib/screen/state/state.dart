@@ -5,13 +5,12 @@ abstract class ListingState extends Equatable {
   @override
   List<Object> get props => [];
 }
-
 class ListingInitial extends ListingState {}
 
 class ListingLoading extends ListingState {}
 
 class ListingLoaded extends ListingState {
-  final List<NestedModel> listings;
+  final List<ProductModel> listings;
 
   ListingLoaded(this.listings);
 
