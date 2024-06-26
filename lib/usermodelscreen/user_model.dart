@@ -55,9 +55,7 @@ class Address {
   String? city;
   String? zipcode;
   Geo? geo;
-
   Address({this.street, this.suite, this.city, this.zipcode, this.geo});
-
   Address.fromJson(Map<String, dynamic> json) {
     street = json['street'];
     suite = json['suite'];
@@ -65,7 +63,6 @@ class Address {
     zipcode = json['zipcode'];
     geo = json['geo'] != null ? Geo.fromJson(json['geo']) : null;
   }
-
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
     data['street'] = street;
@@ -82,14 +79,11 @@ class Address {
 class Geo {
   String? lat;
   String? lng;
-
   Geo({this.lat, this.lng});
-
   Geo.fromJson(Map<String, dynamic> json) {
     lat = json['lat'];
     lng = json['lng'];
   }
-
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
     data['lat'] = lat;
@@ -102,9 +96,7 @@ class Company {
   String? name;
   String? catchPhrase;
   String? bs;
-
   Company({this.name, this.catchPhrase, this.bs});
-
   Company.fromJson(Map<String, dynamic> json) {
     name = json['name'];
     catchPhrase = json['catchPhrase'];
